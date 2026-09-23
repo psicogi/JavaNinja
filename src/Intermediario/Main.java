@@ -2,7 +2,7 @@ package Intermediario;
 
 public class Main {
     public static void main(String[] args) {
-        Ninja sasuke = new Ninja();
+        Uchiha sasuke = new Uchiha();
 
         sasuke.name = "Sasuke";
         sasuke.age = 18;
@@ -10,11 +10,12 @@ public class Main {
 
         sasuke.shariganAtivado();
 
-        Ninja naruto = new Ninja();
+        Uzumaki naruto = new Uzumaki();
         naruto.name = "Naruto";
         naruto.age = 15;
         naruto.village = "Aldeia da Folha";
 
         System.out.println(naruto.saudacao());
+        naruto.uzumaki();
     }
 }
