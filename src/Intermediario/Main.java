@@ -24,7 +24,6 @@ public class Main {
         boruto.name = "Boruto";
         boruto.village = "Aldeia da Folha";
         boruto.age = 19;
-        boruto.
         boruto.AtivarKarma();
         boruto.AtivarJougan();
     }
