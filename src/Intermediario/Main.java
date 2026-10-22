@@ -7,6 +7,7 @@ public class Main {
         sasuke.name = "Sasuke";
         sasuke.age = 18;
         sasuke.village = "Aldeia da Folha";
+        sasuke.habilidade();
 
         sasuke.shariganAtivado();
 
@@ -14,6 +15,7 @@ public class Main {
         naruto.name = "Naruto";
         naruto.age = 15;
         naruto.village = "Aldeia da Folha";
+        naruto.habilidade();
 
         System.out.println(naruto.saudacao());
         naruto.uzumaki();
