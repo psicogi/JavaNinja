@@ -17,5 +17,15 @@ public class Main {
 
         System.out.println(naruto.saudacao());
         naruto.uzumaki();
+
+        System.out.println("-----------------------");
+
+        Boruto boruto = new Boruto();
+        boruto.name = "Boruto";
+        boruto.village = "Aldeia da Folha";
+        boruto.age = 19;
+        boruto.
+        boruto.AtivarKarma();
+        boruto.AtivarJougan();
     }
 }
