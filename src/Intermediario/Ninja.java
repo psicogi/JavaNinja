@@ -1,6 +1,6 @@
 package Intermediario;
 
-public class Ninja {
+public abstract class Ninja implements EstrategiaBatalha {
     String name, village;
     int age;
 
@@ -10,5 +10,9 @@ public class Ninja {
 
     public void habilidade() {
         System.out.println("Meu nome é " + name + ", e esse é o meu ataque especial");
+    }
+
+    public void estrategiaBatalha() {
+        System.out.println("essa é a minha estrategia de batalha");
     }
 }
