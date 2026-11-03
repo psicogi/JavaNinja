@@ -28,5 +28,13 @@ public class Main {
         boruto.age = 19;
         boruto.AtivarKarma();
         boruto.AtivarJougan();
+
+        System.out.println("-----------------------");
+
+        Hatake kakashi = new Hatake();
+        kakashi.name = "Kakashi";
+        kakashi.village = "Aldeia da Folha";
+        kakashi.ninjaDeElite();
+        kakashi.saudacao();
     }
 }

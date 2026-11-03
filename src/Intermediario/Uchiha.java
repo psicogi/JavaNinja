@@ -1,6 +1,6 @@
 package Intermediario;
 
-public class Uchiha extends Ninja{
+public class Uchiha extends Ninja implements Sharigan {
 
     public Uchiha() {
     }
@@ -10,6 +10,7 @@ public class Uchiha extends Ninja{
         super(name, village, age);
     }
 
+    @Override
     public void shariganAtivado() {
         System.out.println("Meu nome é: " + name + ". O Sharigan esta ativado pq sou um Uchiha! ");
     }
