@@ -3,6 +3,11 @@ package Intermediario;
 public abstract class Ninja implements EstrategiaBatalha {
     String name, village;
     int age;
+    int numberOfMissionsCompleted;
+    Rank level;
+
+    // TODO: incluir 2 novos atributos: numberOfMissionsCompleted and rank
+    // TODO: Rank: Gennin, Chunnin, Jounnin e Hokage
 
     public Ninja() {
     }
@@ -11,6 +16,13 @@ public abstract class Ninja implements EstrategiaBatalha {
         this.name = name;
         this.village = village;
         this.age = age;
+    }
+
+    public Ninja(String name, String village, int age, int numberOfMissionsCompleted, Rank level) {
+        // sobrecarga referenciando o construtor acima
+        this(name, village, age);
+        this.numberOfMissionsCompleted = numberOfMissionsCompleted;
+        this.level = level;
     }
 
     public String saudacao() {

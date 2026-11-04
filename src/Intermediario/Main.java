@@ -36,5 +36,11 @@ public class Main {
         kakashi.village = "Aldeia da Folha";
         kakashi.ninjaDeElite();
         kakashi.saudacao();
+
+        System.out.println("-----------------------");
+
+        Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da Folha", 45, 900, Rank.HOKAGE);
+        madara.habilidade();
+        madara.estrategiaBatalha();
     }
 }
