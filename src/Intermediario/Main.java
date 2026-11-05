@@ -42,5 +42,7 @@ public class Main {
         Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da Folha", 45, 900, Rank.HOKAGE);
         madara.habilidade();
         madara.estrategiaBatalha();
+        madara.inteligenciaCombate();
+        madara.inteligenciaCombate(145);
     }
 }
