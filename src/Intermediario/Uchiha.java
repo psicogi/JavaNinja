@@ -1,7 +1,6 @@
 package Intermediario;
 
 public class Uchiha extends Ninja implements Sharigan {
-
     public Uchiha() {
     }
 

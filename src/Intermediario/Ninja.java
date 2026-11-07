@@ -48,4 +48,13 @@ public abstract class Ninja implements EstrategiaBatalha {
             System.out.println("seu QI é: " + qi + " e voce é um jenio");
         }
     }
+
+    @Override
+    public String toString() {
+        return  "name: " + name + '\n' +
+                "village: " + village + '\n' +
+                "age: " + age + '\n' +
+                "numberOfMissionsCompleted: " + numberOfMissionsCompleted + '\n' +
+                "level: " + level;
+    }
 }

@@ -2,38 +2,26 @@ package Intermediario;
 
 public class Main {
     public static void main(String[] args) {
-        Uchiha sasuke = new Uchiha();
-
-        sasuke.name = "Sasuke";
-        sasuke.age = 18;
-        sasuke.village = "Aldeia da Folha";
+        Uchiha sasuke = new Uchiha("Sasuke", "Aldeia da Folha", 18);
         sasuke.habilidade();
-
         sasuke.shariganAtivado();
 
-        Uzumaki naruto = new Uzumaki();
-        naruto.name = "Naruto";
-        naruto.age = 15;
-        naruto.village = "Aldeia da Folha";
-        naruto.habilidade();
+        System.out.println("-----------------------");
 
+        Uzumaki naruto = new Uzumaki("Naruto", "Aldeia da Folha", 15);
+        naruto.habilidade();
         System.out.println(naruto.saudacao());
         naruto.uzumaki();
 
         System.out.println("-----------------------");
 
-        Boruto boruto = new Boruto();
-        boruto.name = "Boruto";
-        boruto.village = "Aldeia da Folha";
-        boruto.age = 19;
+        Boruto boruto = new Boruto("Boruto", "Aldeia da Folha", 19);
         boruto.AtivarKarma();
         boruto.AtivarJougan();
 
         System.out.println("-----------------------");
 
-        Hatake kakashi = new Hatake();
-        kakashi.name = "Kakashi";
-        kakashi.village = "Aldeia da Folha";
+        Hatake kakashi = new Hatake("Kakashi", "Aldeia da Folha", 19);
         kakashi.ninjaDeElite();
         kakashi.saudacao();
 
@@ -44,5 +32,6 @@ public class Main {
         madara.estrategiaBatalha();
         madara.inteligenciaCombate();
         madara.inteligenciaCombate(145);
+        System.out.println(madara);
     }
 }
