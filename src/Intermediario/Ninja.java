@@ -49,6 +49,10 @@ public abstract class Ninja implements EstrategiaBatalha {
         }
     }
 
+    public final void tacarKunai() { // metodo constante, classes filhas não conseguem sobrescrever
+        System.out.println("metodo da classe mae");
+    }
+
     @Override
     public String toString() {
         return  "name: " + name + '\n' +
