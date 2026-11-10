@@ -1,10 +1,10 @@
 package Intermediario;
 
-public abstract class Ninja implements EstrategiaBatalha {
-    String name, village;
-    int age;
-    int numberOfMissionsCompleted;
-    Rank level;
+public abstract class  Ninja implements EstrategiaBatalha {
+    private String name, village;
+    private int age;
+    private int numberOfMissionsCompleted;
+    private Rank level;
 
     // TODO: incluir 2 novos atributos: numberOfMissionsCompleted and rank
     // TODO: Rank: Gennin, Chunnin, Jounnin e Hokage
@@ -51,6 +51,46 @@ public abstract class Ninja implements EstrategiaBatalha {
 
     public final void tacarKunai() { // metodo constante, classes filhas não conseguem sobrescrever
         System.out.println("metodo da classe mae");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getVillage() {
+        return village;
+    }
+
+    public void setVillage(String village) {
+        this.village = village;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getNumberOfMissionsCompleted() {
+        return numberOfMissionsCompleted;
+    }
+
+    public void setNumberOfMissionsCompleted(int numberOfMissionsCompleted) {
+        this.numberOfMissionsCompleted = numberOfMissionsCompleted;
+    }
+
+    public Rank getLevel() {
+        return level;
+    }
+
+    public void setLevel(Rank level) {
+        this.level = level;
     }
 
     @Override

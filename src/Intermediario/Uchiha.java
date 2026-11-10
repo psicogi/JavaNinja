@@ -15,11 +15,11 @@ public class Uchiha extends Ninja implements Sharigan {
 
     @Override
     public void shariganAtivado() {
-        System.out.println("Meu nome é: " + name + ". O Sharigan esta ativado pq sou um Uchiha! ");
+        System.out.println("Meu nome é: " + getName() + ". O Sharigan esta ativado pq sou um Uchiha! ");
     }
 
     @Override
     public void habilidade() {
-        System.out.println("Meu nome é " + name + ", e esse é o meu ataque Uchiha. Eu ja completei: " + numberOfMissionsCompleted + " missoes");
+        System.out.println("Meu nome é " + getName() + ", e esse é o meu ataque Uchiha. Eu ja completei: " + getNumberOfMissionsCompleted() + " missoes");
     }
 }
