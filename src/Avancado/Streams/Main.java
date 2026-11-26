@@ -1,6 +1,7 @@
 package Avancado.Streams;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -25,6 +26,7 @@ public class Main {
         System.out.println("----------------------------------------------------------------");
 
         ninjas.stream()
+                // .sorted(Comparator.comparingInt(Ninja::getAge)) - versão shortcut que faz a mesma coisa
                 .sorted((o1, o2) -> Integer.compare(o1.getAge(), o2.getAge()))
                 .forEach(System.out::println);
     }
