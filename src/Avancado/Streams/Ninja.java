@@ -40,10 +40,8 @@ public class Ninja {
 
     @Override
     public String toString() {
-        return "Ninja{" +
-                "name='" + name + '\'' +
-                ", village='" + village + '\'' +
-                ", age=" + age +
-                '}';
+        return  "name: " + name + '\n' +
+                "village: " + village + '\n' +
+                "age: " + age + '\n';
     }
 }
